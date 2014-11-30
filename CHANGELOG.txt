@@ -1,0 +1,42 @@
+0.4.4:
+
+	> Disabled broken commands 'seta' and 'setap'
+	> Allowed any language name, not just those in the form <language>_<REGION> (e.g en_GB)
+	> Renamed 'md5' to 'digest' and added the ability to use any digest supported by the Java installation
+	> Annotated the command registering methods in SSAPI with @SafeVarargs
+	> More minor source cleanup
+	> Fixed script arguments ("csc <CSC script> [args...]")
+	> Improved 'if' command to execute multiple commands (see usage; 'for' has the same behaviour)
+	> Changed console error text to "SeaShell must be launched from a console"
+	> Used system look and feel for console error message
+	> Switched to an event-based hook system and removed SSAPI.registerSeaShellClosingEvent
+	> Fixed nesting bug by making nesting regex nongreedy (temporary hack - prevents nesting inside nesting, use of variables recommended instead)
+	> Fixed command 'shell'
+	> Rewrote config code (WIP)
+	+ Added commands 'for' (finally!), 'plugins', 'copyall', 'verbosity', 'debug'
+	+ Added core plugin API - allows common code to be shared between plugins, core plugins are loaded first
+	+ Added Javadoc
+	+ Added option 'io-chunk-size' in options.txt (default 'true')
+	- Removed obsolete development version numbering
+
+0.4.3:
+	> Differentiated between info, warning and error log messages
+	> Attempted to fix nesting bug
+	> Improved nesting performance
+	> Began API version numbering, plugins can specify the required API version and a warning will be logged if it does not match SeaShell's
+	> Minor source cleanup
+	> Began logging errors thrown in plugins' main methods
+	+ Added constants, can only be changed in-code and are accessed with a $ symbol
+	+ Added commands 'beep', 'datetime', 'millitime', 'nanotime' and 'usage'
+	+ Added vertical help, prints each command's name and help on a separate line
+	+ Added option 'vertical-help' in options.txt (default 'true')
+	
+0.4.2:
+	> Replaced tildes (~) in commands with the current user's home directory
+	+ Added commands 'pwd', 'md5' and 'write'
+	+ Added update check on startup
+	+ Added option 'charset' in options.txt (default 'UTF-8')
+	- Removed command 'update
+
+0.4.1:
+	> First release

@@ -1,0 +1,10 @@
+# SeaShell main configuration file
+
+lang=en_GB
+disable-plugins=false
+default-echocmd=true
+debug=true
+log-commands=true
+charset=UTF-8
+vertical-help=true
+io-chunk-size=4096

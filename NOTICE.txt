@@ -1,0 +1,1 @@
+The Apache Commons by the Apache Software Foundation libraries included with this piece of software are licensed under the Apache License, available at http://www.apache.org/licenses/LICENSE-2.0.html
